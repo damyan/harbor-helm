@@ -811,6 +811,12 @@ database:
     # server was signed by a trusted CA and the server host name matches the one
     # in the certificate)
     sslmode: "disable"
+    # client ssl data needed!
+    # sslmode: require
+    # sslData:
+    #   clientCertPath: "ssl-data/client.crt"
+    #   clientKeyPath: "ssl-data/client.key"
+    #   serverCertPath: "ssl-data/server.crt"
   # The maximum number of connections in the idle connection pool per pod (core+exporter).
   # If it <=0, no idle connections are retained.
   maxIdleConns: 100
